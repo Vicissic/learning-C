@@ -1,9 +1,15 @@
 #include <stdio.h>
-int main(void) {
-    int a = 1;
-    // size_t is an unsigned integer type of at least 2 bytes used to represent
-    // the size of an object.
-    size_t size = sizeof(a++); // a++ is not evaluated
-    printf("sizeof(a++) = %zu where a = %d\n", size, a);
-    return 0;
+#include <math.h>
+
+
+int main(void){
+    int num1, num2;
+    char operation;
+    printf("please input a number\n");
+    scanf("%d", &num1);
+    printf("please input an operation\n");
+    scanf("%s", &operation);
+    printf("please input another number\n");
+    scanf("%d", &num2);
+    printf("%d\n", num1*5);
 }
